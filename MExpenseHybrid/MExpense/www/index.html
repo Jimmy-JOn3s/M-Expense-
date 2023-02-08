@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/db_mexpense.js"></script>
+    <title>DB Exercise</title>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header"> <h1>M Expense</h1>
+        <button class="ui-btn" onclick="add()" id="btnAdd">Add</button>
+    </div>
+    <div data-role="content">
+        <div id="entry">
+            <label for="txtName">Trip name</label>
+            <input type="text" id="txtName" />
+            <label for="txtDestination">Destination</label>
+            <input type="text" id="txtDestination" />
+            <label for="txtDate">Date</label>
+            <input type="text" data-role="date" id="txtDate">
+            <label><input type="checkbox" name="" id="chkRiskAssessment">Risk assessment</label>
+            <label for="txtDescription">Description</label>
+            <input type="text" id="txtDescription" />
+            <button class="ui-btn" onclick="save()">Save</button>
+            <button class="ui-btn" onclick="onClose()">Close</button>
+        </div>
+        <div id="display">
+            <div>
+                <input type="search" name="search-1" id="search-1" value="">
+                <button class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all" onclick="onSearch();"></button>
+            </div>
+            <div id="list"></div>
+        </div>
+        <div id="detail">
+        </div>
+    </div>
+    <div data-role="footer"></div>
+</div>
+</body>
+</html>

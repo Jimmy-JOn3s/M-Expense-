@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyApplication2</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="activity_entry_name">Name</string>
+    <string name="activity_entry_destination">Destination</string>
+    <string name="activity_entry_risk_assessment">Require risk assessment</string>
+
+    <string name="url">https://gelivery-secure-975843425.ap-southeast-1.elb.amazonaws.com/m-expense/expense/</string>
+    <string name="json">
+        {\"eventName\":\"mens 100 metres\",
+        \"resultList\":[{\"medalColour\":\"bronze\",
+        \"athleteName\":\"gatlin\"},
+        {\"medalColour\":\"silver\",
+        \"athleteName\":\"blake\"},
+        {\"medalColour\":\"gold\",
+        \"athleteName\":\"bolt\"}]}
+    </string>
+</resources>

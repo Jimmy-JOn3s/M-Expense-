@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uog.myapplication2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="M-Expense"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity
+            android:name=".JsonTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EntryActivity"
+            android:exported="false"
+            android:parentActivityName=".TripDetailActivity"/>
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpenseEntryActivity"
+            android:exported="false"
+            android:parentActivityName=".ExpenseListActivity" />
+        <activity
+            android:name=".ExpenseListActivity"
+            android:exported="false"
+            android:parentActivityName=".TripDetailActivity" />
+        <activity
+            android:name=".TripDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".TripDetailActivity" />
+        <activity
+            android:name=".TripDataUploadActivity"
+            android:exported="false"
+            android:parentActivityName=".TripDetailActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_entry"
+            android:theme="@style/Theme.MyApplication2.NoActionBar" />
+        <activity
+            android:name=".AdvanceSearchActivity"
+            android:exported="false"
+            android:parentActivityName=".TripListActivity" />
+        <activity
+            android:name=".TripListActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
